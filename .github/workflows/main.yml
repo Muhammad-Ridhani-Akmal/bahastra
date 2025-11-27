@@ -17,4 +17,4 @@ jobs:
         server: ftpupload.net
         username: ${{ secrets.username}}
         password: ${{ secrets.ftp_password }}
-        server-dir: /htdocs/bahastra
+        server-dir: /htdocs/bahastra/
