@@ -12,9 +12,9 @@ jobs:
       uses: actions/checkout@v4
     
     - name: 📂 Sync files
-      uses: Akmal/FTP-Deploy-Action@v4.3.6
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.6
       with:
         server: ftpupload.net
-        username: if0_38929880
-        password: M1GLdXLDX9rn3
+        username: ${{ secrets.username}}
+        password: ${{ secrets.ftp_password }}
         server-dir: /htdocs/bahastra
